@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(68, 140, 255);
+}
+
+
+
+div.form-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 500px;
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px rgb(49, 101, 184);
+
+    padding: 20px;
+}
+
+
+
+input {
+    width: 100%;
+    font-size: 1.1em;
+    border: none;
+    border-bottom: 2px solid rgb(167, 167, 167);
+    padding: 8px;
+    margin: 10px 0;
+}
+input:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(68, 140, 255);
+}
+
+
+
+button {
+    display: block;
+
+    color: rgb(104, 104, 104);
+    background-color: white;
+    border: 3px solid rgb(167, 167, 167);
+
+    font-size: 1.1em;
+
+    padding: 5px 10px;
+    margin: 30px auto;
+}
+button:hover {
+    color: black;
+    cursor: pointer;
+    border-color: rgb(68, 140, 255);   
+}
+button:active {
+    color: black;
+    border-color: transparent;
+    background-color: rgb(68, 140, 255);
+}
+
