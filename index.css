@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+header {
+    height: 80px;
+    background-image: linear-gradient(to right bottom, #36D1DC, #5B86E5);
+    background-color: grey;
+}
+
+section.banner {
+    height: 400px;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    height: 50px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(87, 161, 100);
+}
+
+
+main {
+    height: 1000px;
+    background-color: rgb(181, 207, 255);
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(233, 255, 181);
+}
