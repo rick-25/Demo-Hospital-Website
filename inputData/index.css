@@ -52,6 +52,7 @@ button {
 
     font-size: 1.1em;
 
+
     padding: 5px 10px;
     margin: 30px auto;
 }
@@ -59,10 +60,13 @@ button:hover {
     color: black;
     cursor: pointer;
     border-color: rgb(68, 140, 255);   
+    box-shadow: 2px 2px 2px grey;
 }
 button:active {
     color: black;
     border-color: transparent;
     background-color: rgb(68, 140, 255);
 }
+
+
 

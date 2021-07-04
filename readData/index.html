@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>BigBrain</title>
+        <title>Patient Database</title>
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        
-        <div class="data">
-            <div class="header">
-                <div class="child">Id</div>
-                <div class="child">Name</div>
-                <div class="child">Age</div>
-                <div class="child">Email</div>
-                <div class="child">Medical_Condition</div>
-                <div class="child">Contact</div>
+        <div class="card">
+            <div class="data">
+                <div class="header">
+                    <div class="child">Id</div>
+                    <div class="child">Name</div>
+                    <div class="child">Age</div>
+                    <div class="child">Email</div>
+                    <div class="child">Medical_Condition</div>
+                    <div class="child">Contact</div>
+                </div>
+                <div class="row-container">
+                    <!-- <div class="row">
+                        <div class="child">null</div>
+                        <div class="child">null</div>
+                        <div class="child">null</div>
+                        <div class="child">null</div>
+                        <div class="child">null</div>
+                        <div class="child">null</div>
+                    </div> -->
+                </div>
             </div>
-            <div class="row-container">
-                <!-- <div class="row">
-                    <div class="child">null</div>
-                    <div class="child">null</div>
-                    <div class="child">null</div>
-                    <div class="child">null</div>
-                    <div class="child">null</div>
-                    <div class="child">null</div>
-                </div> -->
-            </div>
+
+            <button onclick="getAllData()">Fetch all data</button>
+
+            <br />
+
+            <input type="text" placeholder="Search data by id / name"/>
+            <button onclick="getData()">Search</button>
         </div>
-
-
-        <button onclick="getAllData()">Fetch all data</button>
-        
-        <br>
-
-        <input type="text">
-        <button onclick="getData()">Fetch Data of given id</button>
 
         <script src="index.js"></script>
     </body>
 </html>
-

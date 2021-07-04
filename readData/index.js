@@ -4,7 +4,21 @@ function getData() {
     var alerted = false; //For controling how many times the alert box will be shown
     
     let url = "http://localhost/app/api/single_read.php/?id=";
-    url += document.querySelector('input').value;
+    let userIn = document.querySelector("input").value; 
+
+    //Input field is empty
+    if(userIn == "") {
+        alert("Input is empty!");
+        return;
+    }
+
+    //For handling name query
+    if(isNaN(userIn)) {
+        getAllData(userIn);
+        return;
+    }
+
+    url += userIn;
 
     var xhttp = new XMLHttpRequest();
 
@@ -18,9 +32,12 @@ function getData() {
 
             //json data is ready
             fillRows(json);
+            
         } else if (this.status == 404 && !alerted) {
             alert("Data not found!");
             alerted = true;
+        } else if(this.readyState == 4 && !alerted) {
+            alert("Not able to connect database");
         }
     };
 
@@ -30,9 +47,13 @@ function getData() {
 
 
 
-function getAllData() {
+function getAllData(name) {
 
     let url = "http://localhost/app/api/read.php";
+    
+    //For handling name query
+    if(typeof name != "undefined")
+        url += "/?"+"name="+name;
 
     var xhttp = new XMLHttpRequest();
 
@@ -40,7 +61,10 @@ function getAllData() {
         if (this.readyState == 4 && this.status == 200) {
             var json = JSON.parse(this.responseText);
             fillRows(json);
+        } else if(this.readyState == 4) {
+            alert("Not able to connect database!");
         }
+        console.log(this.responseText);
     };
 
     xhttp.open("GET", url);
