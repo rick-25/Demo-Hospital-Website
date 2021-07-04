@@ -1,0 +1,32 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: baseline;
+
+
+    color: white;
+    background-color: rgb(68, 140, 255);
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 10px;
+}
+
+nav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    border-bottom-color: black;
+}

@@ -1,0 +1,35 @@
+<!-- Input fields id should sync with javascript documented -->
+<!-- Submit button(on click) should call collectData() function   -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enroll Patient</title>
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/writeData.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html" target="_blank">Home</a>
+            <a href="#">About us</a>
+            <a href="# target="blank">Enroll Patient</a>
+            <a href="../html/readData.html" target="_blank">Patient database</a>
+            <a href="#">Contact us</a>
+        </nav>
+        <div class="form-card">
+            <input type="text" id="name" placeholder="Name" />
+            <input type="text" id="age" placeholder="Age" />
+            <input type="text" id="email" placeholder="Email" />
+            <input
+                type="text"
+                id="medical_condition"
+                placeholder="Medical Condition"
+            />
+            <input type="text" id="contact" placeholder="Contact number" />
+            <button onclick="collectData()">Submit</button>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
