@@ -10,9 +10,9 @@ nav {
     color: white;
     background-color: rgb(68, 140, 255);
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 
     position: sticky;
     top: 8px;
@@ -34,4 +34,37 @@ nav a:hover {
     color: black;
     background-color: white;
     border-bottom-color: black;
+}
+
+
+
+
+
+.search_box{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.search_box input{
+    padding: 7px;
+    border: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.search_box input:focus {
+    outline: none;
+}
+.search_box button{
+  float: right;
+  
+  color: white;
+  background: rgb(255, 0, 119);
+
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+  padding: 7px;
 }
