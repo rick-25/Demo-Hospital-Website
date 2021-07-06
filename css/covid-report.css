@@ -72,7 +72,7 @@ div.covid-report div.buttons > * {
     border: none;
 }
 div.covid-report div.buttons > *:hover {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     cursor: pointer;
 }
 
