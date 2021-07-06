@@ -2,12 +2,21 @@
 
 
 div.covid-report {
-    background: rgb(206, 206, 206);
     width: 70%;
     overflow: auto;
+
+    background: white;
+    
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
     font-family: monospace;
     margin: 100px auto;
     padding: 30px;
+}
+div.covid-report:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 div.covid-report h1{
@@ -67,9 +76,11 @@ div.covid-report div.buttons {
 div.covid-report div.buttons > * {
     float: left;
     width: 50%;
+    background-color: #f8f8ff;
     font-size: 1.1rem;
-    padding: 8px;
     border: none;
+    border: 1px dotted black;
+    padding: 8px;
 }
 div.covid-report div.buttons > *:hover {
     /* font-size: 1.2rem; */
@@ -79,9 +90,12 @@ div.covid-report div.buttons > *:hover {
 div.covid-report div.buttons >:first-child {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    background-color: rgb(159, 201, 255);
+    color: white;
+    background-color: rgb(68, 140, 255);
+    border-right: none;
 }
 div.covid-report div.buttons >:last-child {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    border-left: none;
 }

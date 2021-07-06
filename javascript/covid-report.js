@@ -1,5 +1,5 @@
 var dataType = "all"; //Possible opetion "today"
-var buttonColor = "rgb(163, 212, 255)";
+var buttonColor = "rgb(68, 140, 255)";
 
 
 
@@ -61,6 +61,7 @@ function todaydata(callingobj) {
     
     decolor();
     callingobj.style.backgroundColor = buttonColor;
+    callingobj.style.color = "white";
     
     dataType = "today";
     setValue("Loading..", "Loading..", "Loading..");
@@ -73,7 +74,8 @@ function alldata(callingobj) {
     
     decolor();
     callingobj.style.backgroundColor = buttonColor;
-    
+    callingobj.style.color = "white";
+
     dataType = "all";
     setValue("Loading..", "Loading..", "Loading..");
     updateCovidData();
@@ -85,8 +87,10 @@ function alldata(callingobj) {
 //Changes the color of both buttons to white
 function decolor() {
     let buttonContainer = document.getElementsByClassName("buttons")[0];
-    buttonContainer.children[0].style.backgroundColor = "white";
-    buttonContainer.children[1].style.backgroundColor = "white";
+    buttonContainer.children[0].style.backgroundColor = "#f8f8ff";
+    buttonContainer.children[0].style.color = "black";
+    buttonContainer.children[1].style.backgroundColor = "#f8f8ff";
+    buttonContainer.children[1].style.color = "black";
 }
 
 

@@ -97,3 +97,12 @@ function fillRows(json) {
         root.appendChild(cur);
     }
 }
+
+
+document.querySelector("input").addEventListener("focus", function () {
+    document.addEventListener("keypress", function name(event) {
+        if(event.key == "Enter") {
+            getData();
+        }
+    });
+});
