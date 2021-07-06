@@ -80,6 +80,9 @@ header {
         background-image: url("../image/dna-3539309_1920.jpg");
     }
 }
+
+
+
 .container {
     color: white;
     position: relative;
@@ -89,10 +92,14 @@ header {
     height: 350px;
     padding: 10px;
     overflow: auto;
+    
     scrollbar-width: none;
     -moz-backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(50px);
+}
+.container::-webkit-scrollbar {
+    width: 0px;
 }
 .container span {
     text-transform: uppercase;
