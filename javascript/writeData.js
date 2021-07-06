@@ -1,3 +1,10 @@
+
+document.addEventListener('keypress', function (event) {
+    if(event.key === "Enter") {
+        collectData();
+    }
+});
+
 function collectData() {
     var name = document.getElementById("name").value;
     var age = document.getElementById("age").value;

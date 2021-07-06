@@ -7,7 +7,7 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
         var json = JSON.parse(this.responseText);
-        alert("Today's cases: " + json.todayCases);
+        console.log(json);
     } else if(this.readyState == 4) {
         alert("Not able to connect database!");
     }

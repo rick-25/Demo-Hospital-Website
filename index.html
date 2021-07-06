@@ -9,7 +9,12 @@
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="css/footer.css" />
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="css/covid-report.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
     </head>
     <body>
         <header>
@@ -32,8 +37,11 @@
                             help Hoosiers move one step closer to a happier,
                             healthier future.</span
                         >
-                        <a class="button" href="https://www.elsevier.com/connect/coronavirus-information-center"
-                             target="_blank">COVID-19 vaccine information center</a
+                        <a
+                            class="button"
+                            href="https://www.elsevier.com/connect/coronavirus-information-center"
+                            target="_blank"
+                            >COVID-19 vaccine information center</a
                         >
                     </div>
                 </div>
@@ -47,11 +55,37 @@
             <a href="#">Contact us</a>
 
             <div class="search_box">
-                <input type="text" placeholder="search" onfocus="keypress()">
+                <input type="text" placeholder="search" onfocus="keypress()" />
                 <button onclick="search()">search</button>
             </div>
-
         </nav>
+
+        <div class="covid-report">
+            <h1>Covid Report (India)</h1>
+            <hr />
+            <div class="data">
+                <div class="col">
+                    <div class="key">Cases</div>
+                    <hr />
+                    <div class="value">57953</div>
+                </div>
+                <div class="col">
+                    <div class="key">Recovered</div>
+                    <hr />
+                    <div class="value">9579</div>
+                </div>
+                <div class="col">
+                    <div class="key">Deaths</div>
+                    <hr />
+                    <div class="value">125</div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button>All Data</button>
+                <button>Today's Data</button>
+            </div>
+        </div>
+
         <footer class="footer">
             <div class="row">
                 <div class="footer_col">
@@ -94,7 +128,6 @@
             </div>
         </footer>
 
-        
         <script src="./javascript/corona.js"></script>
         <script src="./javascript/searchbox.js"></script>
     </body>
