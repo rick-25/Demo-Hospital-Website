@@ -3,13 +3,15 @@ section.patient-spk {
     font-family: Lato-Regular, Arial, sans-serif;
     background-color: #f7f5f5;
     overflow: auto;  
+    border: 1px solid grey;
 }
 
 section.patient-spk h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.4em;
     text-align: center;
-    border-bottom: 2px ridge rgb(179, 164, 142);
+    background-color: #e4e4e4;
+    border-bottom: 1px ridge grey;
     padding: 20px;
 }
 
