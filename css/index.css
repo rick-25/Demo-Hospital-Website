@@ -7,7 +7,7 @@ header {
     margin-bottom: 3px;
     overflow: hidden;
 }
-.upper_section {
+header .upper_section {
     display: flex;
     justify-content: center;
     height: 100px;
@@ -15,11 +15,11 @@ header {
     margin-bottom: 15px;
     background-color: rgb(68, 140, 255);
 }
-.upper_section > * {
+header .upper_section > * {
     margin: 0 20px;
 }
 
-.logo {
+header .logo {
     background-image: url("../image/pulse-trace-163708.jpg");
     background-size: cover;
     background-position: center;
@@ -28,19 +28,19 @@ header {
     border-radius: 50%;
 }
 
-.heading span {
+header .heading span {
     color: white;
     text-transform: uppercase;
     display: block;
 }
-.text3 {
+header .text3 {
     font-size: 40px;
     font-weight: 600;
     letter-spacing: 8px;
     position: relative;
     animation: text3 3s normal forwards;
 }
-.text4 {
+header .text4 {
     font-size: 30px;
     position: relative;
     left: 35px;
@@ -58,7 +58,7 @@ header {
 
 
 
-.background_container {
+header .background_container {
     height: 452px;
     background-image: url("../image/dna-3539309_1920.jpg");
     background-position: center;
@@ -83,7 +83,7 @@ header {
 
 
 
-.container {
+header .container {
     color: white;
     position: relative;
     top: 40px;
@@ -98,14 +98,14 @@ header {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(50px);
 }
-.container::-webkit-scrollbar {
+header .container::-webkit-scrollbar {
     width: 0px;
 }
-.container span {
+header .container span {
     text-transform: uppercase;
     display: block;
 }
-.text1 {
+header .text1 {
     color: inherit;
     width: 90%;
     font-size: 40px;
@@ -114,7 +114,7 @@ header {
     margin-bottom: 30px;
     position: relative;
 }
-.text2 {
+header .text2 {
     font-size: 23px;
     font-weight: 600;
     color: inherit;
@@ -122,7 +122,7 @@ header {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
-.button {
+header .button {
     position: relative;
     color: black;
     font-size: 28px;
@@ -134,13 +134,23 @@ header {
     text-decoration: none;
     border: 2px solid black;
 }
-.button:hover {
+header .button:hover {
     color: black;
     background-color: white;
     border-color: black;
 }
-.button:active {
+header .button:active {
     border: transparent;
     color: white;
     background-color: rgb(68, 140, 255);
+}
+
+
+main {
+    width: 75%;
+    margin: 30px auto;
+}
+
+main > * {
+    margin: 100px 0;
 }

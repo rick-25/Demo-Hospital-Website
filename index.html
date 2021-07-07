@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="css/navbar.css" />
         <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/covid-report.css" />
+        <link rel="stylesheet" href="css/speciality.css" />
+        <link rel="stylesheet" href="css/patient-spk.css" />
         <link
             rel="stylesheet"
             type="text/css"
@@ -17,7 +19,7 @@
         />
     </head>
     <body>
-        
+
         <header>
             <div class="upper_section">
                 <div class="logo"></div>
@@ -48,13 +50,13 @@
                 </div>
             </div>
         </header>
-       
+
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#">About us</a>
             <a href="./html/writeData.html" target="_blank">Enroll Patient</a>
             <a href="./html/readData.html" target="_blank">Patient database</a>
-            <a href="#">Contact us</a>
+            <a href="#footer">Contact us</a>
 
             <div class="search_box">
                 <input type="text" placeholder="search" onfocus="keypress()" />
@@ -62,33 +64,86 @@
             </div>
         </nav>
 
-        <div class="covid-report">
-            <h1>Covid Report (India)</h1>
-            <hr />
-            <div class="data">
-                <div class="col">
-                    <div class="key">Cases</div>
-                    <hr />
-                    <div class="value">Loading..</div>
+        <main>
+            <div class="covid-report">
+                <h1>Covid Report (India)</h1>
+                <hr />
+                <div class="data">
+                    <div class="col">
+                        <div class="key">Cases</div>
+                        <hr />
+                        <div class="value">Loading..</div>
+                    </div>
+                    <div class="col">
+                        <div class="key">Recovered</div>
+                        <hr />
+                        <div class="value">Loading..</div>
+                    </div>
+                    <div class="col">
+                        <div class="key">Deaths</div>
+                        <hr />
+                        <div class="value">Loading..</div>
+                    </div>
                 </div>
-                <div class="col">
-                    <div class="key">Recovered</div>
-                    <hr />
-                    <div class="value">Loading..</div>
-                </div>
-                <div class="col">
-                    <div class="key">Deaths</div>
-                    <hr />
-                    <div class="value">Loading..</div>
+                <div class="buttons">
+                    <button onclick="alldata(this)">All Data</button>
+                    <button onclick="todaydata(this)">Today's Data</button>
                 </div>
             </div>
-            <div class="buttons">
-                <button onclick="alldata(this)">All Data</button>
-                <button onclick="todaydata(this)">Today's Data</button>
-            </div>
-        </div>
+            
+            <section class="speciality-section">   
+                <h1>Our Specialities</h1>
+                <div class="speciality-container">
+                    <div class="speciality">
+                        <div class="circle" name="cardic"></div>
+                        <hr>
+                        <p>Cardic Surgury</p>
+                    </div>
+                    <div class="speciality">
+                        <div class="circle" name="breast-cancer"></div>
+                        <hr>
+                        <p>Breast cancer</p>
+                    </div>
+                    <div class="speciality">
+                        <div class="circle" name="anaesthesia"></div>
+                        <hr>
+                        <p>Anaesthesia</p>
+                    </div>
+                    <div class="speciality">
+                        <div class="circle" name="bone-marrow"></div>
+                        <hr>
+                        <p>Bone Marrow</p>
+                    </div>
+                </div>
+            </section>
 
-        <footer class="footer">
+            <section class="patient-spk">
+                <h1>Our Patient Speaks</h1>
+                <div class="container">
+                    <img src="https://cdn.apollohospitals.com/dev-apollohospitals/2021/04/ourpatientsspeak.jpg" width="450px" alt="Happy Patient">
+                    <div class="content">
+                        <div>
+                            <p class="name">Aditya Lokhandwala</p>
+                            <p class="quote">Sigma rule: #5735 -> Always choole AAA health care, its best.</p>
+                        </div>
+                        <div>
+                            <p class="name">Abhishek</p>
+                            <p class="quote">Bhai best hospital hai kasam se, khana mast milta hai #FullMauz</p>
+                        </div>    
+                        <div>
+                            <p class="name">Lavanya (South Delhi)</p>
+                            <p class="quote">I don't like indian Hospital</p>
+                        </div>
+                        <div>
+                            <p class="name">Rahul (North Delhi)</p>
+                            <p class="quote">Where is my pen, Lavanya ki baat note kar leta hu, kahi upese mein na aa jaye</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="footer">
             <div class="row">
                 <div class="footer_col">
                     <h4>Communicate through</h4>

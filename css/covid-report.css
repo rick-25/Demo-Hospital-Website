@@ -2,7 +2,7 @@
 
 
 div.covid-report {
-    width: 70%;
+    width: 100%;
     overflow: auto;
 
     background: white;
@@ -12,7 +12,6 @@ div.covid-report {
     transition: 0.3s;
 
     font-family: monospace;
-    margin: 100px auto;
     padding: 30px;
 }
 div.covid-report:hover {
@@ -35,12 +34,13 @@ div.covid-report .data {
 div.covid-report div.col {
     width: 200px;
     height: 200px;
-    background-color: rgb(163, 212, 255);
-    box-shadow: 5px 5px;
+    background-color: #f7f7f7;
+    transition: .3s;
+    box-shadow: 0px 1px 3px rgb(143, 143, 143);
 }
 div.covid-report div.col:hover {
     transform: translate(0, -5px);
-    box-shadow: 10px 5px;
+    box-shadow: 3px 3px 8px rgb(143, 143, 143); 
 }
 div.covid-report div.col > * {
     transform: translate(0px, -50%);
