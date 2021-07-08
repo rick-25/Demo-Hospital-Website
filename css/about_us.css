@@ -1,0 +1,108 @@
+body {
+    background-color: #f8f8ff;
+}
+
+
+main{
+    height: fit-content;
+    margin-top: -10px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+    margin-bottom: 30px;
+}
+.About-us{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 28px;
+    color: rgb(76, 19, 114);
+}
+.container_1{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    margin-top: 80px;
+    background-color: rgb(68, 140, 255);
+    margin-bottom: 120px;
+}
+.about_image{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 140px;
+    top: -250px;
+    background-image: url('image/mother-1171569_1920.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.about_image:hover{
+    box-shadow: 0 20px 30px 0;
+    left: 141px;
+}
+.about_us{
+    position: relative;
+    left: 60%;
+    width: 400px;
+    height: 200px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.about_us h1{
+    text-align: center;
+}
+.about_us  hr{
+    width: 50%;
+    height: 0.1rem;
+    background-color: rgb(139, 44, 44);
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.about_us p{
+    font-size: 21px;
+    font-weight: 700;
+    color: white;
+    margin-top: -5px;
+}
+.real-h1{
+    text-align: center;
+    font-size: 28px;
+}
+.staff-alien{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -20px;
+}
+
+.staff{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: rgb(68, 140, 255);
+    box-shadow: 4px 0 0 0;
+    transition: 1s;
+}
+.staff:hover{
+    position: relative;
+    left: 2px;
+    box-shadow: 0 10px 15px 0;
+    cursor: pointer;
+}
+.staff h4{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+.details-values{
+   text-align: center;
+   font-size: 23px;
+   font-weight: 800;
+   margin-bottom: 40px;
+}
+div.staff-alien div.details  div.details-values hr{
+    height: 0.2rem;
+    background-color: black;
+}

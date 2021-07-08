@@ -4,7 +4,7 @@ function getData() {
     var alerted = false; //For controling how many times the alert box will be shown
     
     let url = "http://localhost/app/api/single_read.php/?id=";
-    let userIn = document.querySelector("input").value; 
+    let userIn = document.querySelector(".card input").value; 
 
     //Input field is empty
     if(userIn == "") {
