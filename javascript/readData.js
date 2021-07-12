@@ -99,7 +99,7 @@ function fillRows(json) {
 }
 
 
-document.querySelector("input").addEventListener("focus", function () {
+document.querySelector("div.card input").addEventListener("focus", function () {
     document.addEventListener("keypress", function name(event) {
         if(event.key == "Enter") {
             getData();
