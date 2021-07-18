@@ -1,9 +1,9 @@
 <?php 
     class Database {
-        private $host = "sql203.epizy.com"; //"localhost" on xampp 
-        private $database_name = "epiz_29034246_phpapidb"; 
-        private $username = "epiz_29034246"; //"root" on xampp 
-        private $password = "FwmExqt7Spl1iPj"; //"" on xampp
+        private $host = "localhost"; //"localhost" on xampp 
+        private $database_name = "phpapidb";  //database name
+        private $username = "root"; //"root" on xampp 
+        private $password = ""; //"" on xampp
 
         public $conn;
 
